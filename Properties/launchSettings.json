@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "CS_week2_OEF": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7017",
+      "launchBrowser": false
+    }
+  }
+}

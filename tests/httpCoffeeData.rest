@@ -1,0 +1,18 @@
+### Test GetTransactions API - Fetch all transactions
+GET http://localhost:7071/api/transactions HTTP/1.1
+Content-Type: application/json
+
+GET http://localhost:7017/api/coffees HTTP/1.1
+
+POST http://localhost:7017/api/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+  "dateTime": "2024-12-02T10:00:00",
+  "cashType": "card",
+  "card": "ANON-0000-0000-0003",
+  "money": 28.90,
+  "coffeeName": "Latte3"
+}
+
+GET http://localhost:7017/api/transactions/count HTTP/1.1

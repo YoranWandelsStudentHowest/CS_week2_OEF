@@ -1,0 +1,16 @@
+# GET http://localhost:7017/api/HelloWorldTrigger HTTP/1.1
+
+# POST http://localhost:7017/api/HelloWorldTrigger HTTP/1.1
+
+# GET http://localhost:7017/api/calculator/5/6/-
+
+# GET https://yorandemofunctionslessen.azurewebsites.net/api/calculator/1/2 HTTP/1.1
+
+# POST http://localhost:7017/api/calculator HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "A": 5,
+#     "B": 10,
+#     "Operator": "multiply"
+# }
