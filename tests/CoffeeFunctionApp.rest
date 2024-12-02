@@ -1,0 +1,13 @@
+GET https://yoranwfunctionapp.azurewebsites.net/api/transactions
+Content-Type: application/json
+
+{
+    "id": "some-unique-id",
+    "dateTime": "2024-12-02T12:00:00",
+    "cashType": "card",
+    "card": "ANON-1234",
+    "money": 15.75,
+    "coffeeName": "Espresso"
+}
+
+GET  https://yoranwfunctionapp.azurewebsites.net/api/coffees HTTP/1.1
