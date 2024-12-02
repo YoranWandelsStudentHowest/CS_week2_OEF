@@ -16,7 +16,7 @@ namespace Howest.Functions
 
         // Get all coffee names
         [Function("GetCoffeeNames")]
-        public async Task<IActionResult> GetAllCoffeeNames([HttpTrigger(AuthorizationLevel.Function, "get", Route = "coffees")] HttpRequest req)
+        public async Task<IActionResult> GetAllCoffeeNames([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "coffees")] HttpRequest req)
         {
             try
             {
