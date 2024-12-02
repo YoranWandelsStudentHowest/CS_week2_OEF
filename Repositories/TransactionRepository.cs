@@ -82,9 +82,11 @@ public class TransactionRepository
                         }
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    throw new Exception("Error fetching coffee names");
+                    // Log the exception details (you can use any logging framework like Serilog, NLog, or log to console)
+                    // For now, we are just throwing the exception to capture the error with a detailed message
+                    throw new Exception($"Error fetching coffee names: {ex.Message}, StackTrace: {ex.StackTrace}");
                 }
             }
         }
